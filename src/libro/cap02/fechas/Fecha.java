@@ -6,11 +6,16 @@ public class Fecha {
 	private int anio;
 	
 	
-	//constructor
+	//constructor recibe dia, mes, anio
 	public Fecha(int d, int m, int a){
 		dia= d;
 		mes = m;
 		anio = a;
+	}
+	
+	//constructor sin argumentos
+	public Fecha(){
+	
 	}
 	
 	public boolean equals(Object o){

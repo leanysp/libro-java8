@@ -15,14 +15,25 @@ public class TestFecha3 {
 		int anio = scanner.nextInt();
 		
 		//creo un objeto de la clase Fecha
-		Fecha f2 = new Fecha(dia,mes,anio);
+		Fecha f1 = new Fecha(dia,mes,anio);
+		
 		//el usuario ingresa los datos de la fecha
 		System.out.print("Ingrese fecha1 (dia,mes y anio): ");
 		dia=scanner.nextInt();
 		mes= scanner.nextInt();
 		anio = scanner.nextInt();
 		
+		//creo un objeto de la clase Fecha
+		Fecha f2 = new Fecha(dia,mes,anio);
 		
+		System.out.println("Fecha 1 = " +f1);
+		System.out.println("Fecha 2 = " +f2);
+		
+		if(f1.equals(f2)){
+			System.out.println("Son iguales ");
+		}else{
+			System.out.println("Son distintas ");
+		}
 
 	}
 
